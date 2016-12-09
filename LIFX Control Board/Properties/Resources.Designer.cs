@@ -61,7 +61,7 @@ namespace LIFX_Control_Board.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to TEsT.
+        ///   Looks up a localized string similar to .
         /// </summary>
         internal static string Key {
             get {

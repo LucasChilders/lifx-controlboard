@@ -158,7 +158,7 @@
     <Resource Include="on_color_large.png.ico" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Key.txt" />
+    <Resource Include="Key.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
