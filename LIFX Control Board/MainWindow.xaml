@@ -1,0 +1,36 @@
+﻿<Window x:Class="LIFX_Control_Board.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:LIFX_Control_Board"
+        mc:Ignorable="d"
+        Title="LIFX Adjuster" Height="307" Width="444" ResizeMode="CanMinimize"
+        Closing="Window_Closing">
+    <Grid HorizontalAlignment="Left" Width="429">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Slider x:Name="slider" HorizontalAlignment="Left" Margin="10,46,0,0" VerticalAlignment="Top" Width="200" Maximum="255" ValueChanged="slider_ValueChanged" IsSnapToTickEnabled="True" TickFrequency="1"/>
+        <Slider x:Name="slider1" HorizontalAlignment="Left" Margin="10,96,0,0" VerticalAlignment="Top" Width="200" Maximum="255" IsSnapToTickEnabled="True" TickFrequency="1" ValueChanged="slider1_ValueChanged"/>
+        <Slider x:Name="slider2" HorizontalAlignment="Left" Margin="10,150,0,0" VerticalAlignment="Top" Width="200" Maximum="255" IsSnapToTickEnabled="True" TickFrequency="1" ValueChanged="slider2_ValueChanged"/>
+        <Label x:Name="label" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top">
+            <Label x:Name="label3" Content="Label"/>
+        </Label>
+        <Label x:Name="label1" Content="Label" HorizontalAlignment="Left" Margin="10,69,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.184,-0.103"/>
+        <Label x:Name="label2" Content="Label" HorizontalAlignment="Left" Margin="10,119,0,0" VerticalAlignment="Top"/>
+        <Canvas x:Name="canvas" HorizontalAlignment="Left" Height="124" Margin="226,25,0,0" VerticalAlignment="Top" Width="189"/>
+        <Label x:Name="label4" Content="Label" HorizontalAlignment="Left" Margin="10,173,0,0" VerticalAlignment="Top"/>
+        <Slider x:Name="slider3" HorizontalAlignment="Left" Margin="10,199,0,0" VerticalAlignment="Top" Width="200" IsSnapToTickEnabled="True" TickFrequency="1" Maximum="100" Minimum="1" ValueChanged="slider3_ValueChanged" Value="100" />
+        <Button x:Name="button" Content="Update Color" HorizontalAlignment="Left" Margin="226,229,0,0" VerticalAlignment="Top" Width="191" Click="button_Click" Height="30"/>
+        <Button x:Name="button1" Content="Toggle Lights" HorizontalAlignment="Left" Margin="53,229,0,0" VerticalAlignment="Top" Width="161" Click="button1_Click" IsDefault="True" Height="30"/>
+        <Button x:Name="button2" Content="Warm" HorizontalAlignment="Left" VerticalAlignment="Top" Width="93" Margin="226,154,0,0" Click="button2_Click"/>
+        <Button x:Name="button3" Content="Halogen" HorizontalAlignment="Left" Margin="324,154,0,0" VerticalAlignment="Top" Width="93" Click="button3_Click"/>
+        <Button x:Name="button4" Content="Carbon Arc" HorizontalAlignment="Left" Margin="226,179,0,0" VerticalAlignment="Top" Width="93" Click="button4_Click"/>
+        <Button x:Name="button5" Content="White" HorizontalAlignment="Left" Margin="324,179,0,0" VerticalAlignment="Top" Width="93" Click="button5_Click"/>
+        <Button x:Name="button6" Content="Purple" HorizontalAlignment="Left" Margin="324,204,0,0" VerticalAlignment="Top" Width="93" Click="button6_Click"/>
+        <Button x:Name="button7" Content="Overcast" HorizontalAlignment="Left" Margin="226,204,0,0" VerticalAlignment="Top" Width="93" Click="button7_Click"/>
+        <Button x:Name="button8" Content="Help" HorizontalAlignment="Left" Margin="10,229,0,0" VerticalAlignment="Top" Width="38" Height="30" Click="button8_Click"/>
+        <Label x:Name="label5" Content="No API Key Set!" HorizontalAlignment="Left" Margin="10,292,0,-40" VerticalAlignment="Top"/>
+    </Grid>
+</Window>
